@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>ClarusDx | Pathology at the speed of light</title>
+<meta name="description" content="ClarusDx is advancing direct tissue imaging for pathologists and clinical teams. Explore the FIBI platform, clinical applications, and published research.">
+<meta name="theme-color" content="#181829">
+<link rel="icon" href="./favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Newsreader:ital,opsz,wght@1,6..72,400&display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background: #FFFFFF; }
+  a { color: #5148A2; text-decoration: none; }
+  a:hover { color: #202234; }
+  summary { list-style: none; cursor: pointer; }
+  summary::-webkit-details-marker { display: none; }
+</style>
+</helmet>
+
+<div style="font-family:'Helvetica Neue',Inter,Helvetica,Arial,sans-serif; color:#202234; background:#FFFFFF; -webkit-font-smoothing:antialiased">
+
+  <!-- HEADER -->
+  <div style="position:sticky; top:0; z-index:20; background:#FFFFFF; border-bottom:1px solid #DEDEE7">
+    <div style="max-width:1280px; margin:0 auto; padding:0 40px; height:90px; display:flex; align-items:center; justify-content:space-between; gap:24px">
+      <a href="#top" style="display:flex; align-items:flex-start; gap:9px; color:#202234">
+        <svg height="30" viewBox="0 0 382 420" style="display:block; flex:none" aria-hidden="true">
+          <path d="M382 100 L382 95 A95 95 0 0 0 287 0 L95 0 A95 95 0 0 0 0 95 L0 325 A95 95 0 0 0 95 420 L287 420 A95 95 0 0 0 382 325 L382 322 L312 322 A22 22 0 0 1 290 345 L115 345 A35 35 0 0 1 80 310 L80 110 A35 35 0 0 1 115 75 L290 75 A22 22 0 0 1 312 100 Z" fill="#5148A2"></path>
+          <rect x="312" y="130" width="70" height="167" fill="#D15C68"></rect>
+        </svg>
+        <div style="display:flex; align-items:flex-start; gap:3px">
+          <div style="font:600 25px/30px 'Helvetica Neue',Inter,sans-serif; letter-spacing:-.03em; color:#202234">Clarus<span style="color:#5148A2">Dx</span></div>
+          <div style="font:400 10px/1 'Helvetica Neue',Inter,sans-serif; color:#626474; padding-top:2px">™</div>
+        </div>
+      </a>
+      <div style="display:flex; align-items:center; gap:34px; font:400 14px 'Helvetica Neue',Inter,sans-serif">
+        <a href="#technology" style="color:#626474">Technology</a>
+        <a href="#platform" style="color:#626474">Platform</a>
+        <a href="#applications" style="color:#626474">Applications</a>
+        <a href="#science" style="color:#626474">Science</a>
+        <a href="#team" style="color:#626474">Team</a>
+        <a href="#connect" style="color:#202234; border:1px solid #C0BDCE; padding:11px 20px; border-radius:2px; margin-left:4px">Connect with us ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <div id="top" style="background:#181829; color:#FFFFFF">
+    <div style="max-width:1280px; margin:0 auto; padding:120px 40px 48px; display:grid; grid-template-columns:minmax(0,1fr) 620px; gap:60px; align-items:start">
+      <div style="padding-top:28px">
+        <h1 style="font:300 82px/1.07 'Helvetica Neue',Inter,sans-serif; letter-spacing:-.025em; margin:0 0 44px">Pathology at the<br><em style="font:400 italic 82px/1.07 'Newsreader',serif; letter-spacing:-.01em; color:#D5B2D2">speed of light.<sup style="font:400 20px 'Helvetica Neue',Inter,sans-serif; font-style:normal; vertical-align:top; position:relative; top:14px; margin-left:4px">™</sup></em></h1>
+        <p style="font:400 23px/1.45 'Helvetica Neue',Inter,sans-serif; color:#FFFFFF; margin:0 0 22px">A new perspective on tissue.<br>Closer to the point of care.</p>
+        <p style="font:400 16px/1.7 'Helvetica Neue',Inter,sans-serif; color:#C0BDCE; max-width:520px; margin:0 0 44px">We're advancing direct-to-digital tissue imaging to bring microscopic information closer to the decisions that matter.</p>
+        <div style="display:flex; align-items:center; gap:24px; margin-bottom:46px">
+          <a href="#technology" style="font:500 15px 'Helvetica Neue',Inter,sans-serif; background:#FFFFFF; color:#181829; padding:16px 26px; border-radius:2px">Explore FIBI ↗</a>
+          <a href="#science" style="font:500 15px 'Helvetica Neue',Inter,sans-serif; color:#FFFFFF; border-bottom:1px solid #FFFFFF; padding-bottom:4px">See the science &nbsp;→</a>
+        </div>
+        <div style="font:400 12px 'Helvetica Neue',Inter,sans-serif; color:#8D8A9E">Technology in development</div>
+      </div>
+
+      <div style="position:relative">
+        <div style="position:absolute; left:-26px; top:0; bottom:60px; display:flex; align-items:flex-end; justify-content:center; width:14px">
+          <div style="font:400 10px 'Helvetica Neue',Inter,sans-serif; letter-spacing:.3em; color:#8D8A9E; white-space:nowrap; writing-mode:vertical-rl; transform:rotate(180deg)">A CLOSER LOOK</div>
+        </div>
+        <div style="border:1px solid #8A809E; border-radius:80px 0 0 0; height:490px; display:flex; align-items:center; justify-content:center; overflow:hidden; position:relative">
+          <img src="./img/gigafibi-hero.png" alt="GigaFIBI tissue imaging instrument concept" style="display:block; width:100%; height:100%; object-fit:cover; mix-blend-mode:screen">
+          <div style="position:absolute; right:-7px; top:62px; width:13px; height:1px; background:#8A809E"></div>
+          <div style="position:absolute; right:-1px; top:56px; width:1px; height:13px; background:#8A809E"></div>
+        </div>
+        <div style="display:flex; justify-content:space-between; align-items:flex-end; padding:30px 0 0 10px; font:400 12px 'Helvetica Neue',Inter,sans-serif; color:#BAB5C9">
+          <span>GigaFIBI</span>
+          <a href="#platform" style="color:#BAB5C9; border-bottom:1px solid #8A809E; padding-bottom:3px">Instrument concept · In development &nbsp;↗</a>
+        </div>
+      </div>
+    </div>
+    <div style="height:62px"></div>
+  </div>
+
+  <!-- VALUE STRIP -->
+  <div style="max-width:1280px; margin:0 auto; padding:60px 40px 0">
+    <div style="display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:40px; padding:0 0 60px; border-bottom:1px solid #DEDEE7">
+      <div style="display:grid; grid-template-columns:34px 1fr"><span style="font:400 12px 'Helvetica Neue',Inter,sans-serif; color:#8D8A9E; padding-top:6px">01</span><div><div style="font:400 20px/1.3 'Helvetica Neue',Inter,sans-serif; margin-bottom:10px">Earlier information</div><div style="font:400 15px/1.65 'Helvetica Neue',Inter,sans-serif; color:#626474">Bringing tissue assessment closer to the clinical workflow.</div></div></div>
+      <div style="display:grid; grid-template-columns:34px 1fr"><span style="font:400 12px 'Helvetica Neue',Inter,sans-serif; color:#8D8A9E; padding-top:6px">02</span><div><div style="font:400 20px/1.3 'Helvetica Neue',Inter,sans-serif; margin-bottom:10px">Familiar microscopic detail</div><div style="font:400 15px/1.65 'Helvetica Neue',Inter,sans-serif; color:#626474">Digital images with the H&amp;E appearance pathologists know.</div></div></div>
+      <div style="display:grid; grid-template-columns:34px 1fr"><span style="font:400 12px 'Helvetica Neue',Inter,sans-serif; color:#8D8A9E; padding-top:6px">03</span><div><div style="font:400 20px/1.3 'Helvetica Neue',Inter,sans-serif; margin-bottom:10px">More from each specimen</div><div style="font:400 15px/1.65 'Helvetica Neue',Inter,sans-serif; color:#626474">Developing workflows with subsequent tissue evaluation in mind.</div></div></div>
+    </div>
+  </div>
+
+  <!-- TECHNOLOGY -->
+  <div id="technology">
+    <div style="max-width:1280px; margin:0 auto; padding:120px 40px 0">
+      <div style="display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:72px; padding-bottom:110px">
+        <div>
+          <div style="font:500 11px 'Helvetica Neue',Inter,sans-serif; letter-spacing:.3em; color:#5148A2; margin-bottom:34px">THE TECHNOLOGY</div>
+          <h2 style="font:400 56px/1.12 'Helvetica Neue',Inter,sans-serif; letter-spacing:-.025em; margin:0">Digital pathology.<br>Directly from tissue.</h2>
+        </div>
+        <div style="padding-top:4px">
+          <p style="font:400 23px/1.55 'Helvetica Neue',Inter,sans-serif; color:#202234; margin:0 0 26px">FIBI creates microscopic images directly from the specimen, bringing digital image acquisition earlier in the pathology workflow.</p>
+          <p style="font:400 16px/1.7 'Helvetica Neue',Inter,sans-serif; color:#626474; margin:0 0 40px">Fluorescence-imitating brightfield imaging reveals tissue architecture and cellular detail in full color. Our focus is on making this approach practical for fresh-tissue assessment, with images that pathologists can examine and interpret.</p>
+          <div style="border-top:1px solid #DEDEE7; padding-top:30px">
+            <div style="font:400 22px 'Helvetica Neue',Inter,sans-serif; margin-bottom:14px">An imaging foundation for AI</div>
+            <p style="font:400 16px/1.7 'Helvetica Neue',Inter,sans-serif; color:#626474; margin:0 0 14px">Digital from acquisition, FIBI creates opportunities for computational analysis and AI development alongside pathologist expertise.</p>
+            <p style="font:400 13px/1.6 'Helvetica Neue',Inter,sans-serif; color:#8D8A9E; margin:0">AI applications require their own development and validation.</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="border-top:1px solid #DEDEE7; padding-top:44px">
+        <div style="display:grid; grid-template-columns:minmax(0,1fr) minmax(0,.55fr); gap:48px; align-items:end; margin-bottom:34px">
+          <div>
+            <div style="font:500 11px 'Helvetica Neue',Inter,sans-serif; letter-spacing:.3em; color:#5148A2; margin-bottom:22px">THE IMAGING PRINCIPLE</div>
+            <h3 style="font:400 34px 'Helvetica Neue',Inter,sans-serif; letter-spacing:-.02em; margin:0">How FIBI forms an image.</h3>
+          </div>
+          <p style="font:400 16px/1.7 'Helvetica Neue',Inter,sans-serif; color:#626474; margin:0">Controlled illumination and the tissue's own fluorescence reveal microscopic detail at the stained surface.</p>
+        </div>
+        <div style="display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); border:1px solid #DEDEE7">
+          <div style="padding:30px 32px 32px; background:#FFFFFF; border-right:1px solid #DEDEE7">
+            <div style="font:500 10px 'Helvetica Neue',Inter,sans-serif; letter-spacing:.26em; color:#5148A2; margin-bottom:28px">OPTICAL PRINCIPLE</div>
+            <svg viewBox="0 0 520 520" style="display:block; width:100%; max-width:520px; margin:0 auto" aria-label="Simplified FIBI microscope: illumination is directed through an objective to stained tissue, and light from the tissue travels back toward the camera.">
+              <defs><linearGradient id="cxTis" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F4D2DD"></stop><stop offset="1" stop-color="#F7E1C9"></stop></linearGradient></defs>
+              <rect x="226" y="40" width="68" height="46" rx="4" fill="#FFFFFF" stroke="#5148A2" stroke-width="1.5"></rect>
+              <rect x="238" y="50" width="44" height="22" rx="2" fill="#E3DFF3"></rect>
+              <text x="316" y="68" font-family="Helvetica Neue, Inter, sans-serif" font-size="12" fill="#626474">Camera</text>
+              <line x1="260" y1="86" x2="260" y2="330" stroke="#C8708E" stroke-width="2"></line>
+              <line x1="260" y1="86" x2="260" y2="330" stroke="#5148A2" stroke-width="2" stroke-dasharray="4 7"></line>
+              <path d="M225 155 L295 115" stroke="#5148A2" stroke-width="3"></path>
+              <text x="185" y="142" font-family="Helvetica Neue, Inter, sans-serif" font-size="12" fill="#626474" text-anchor="end">Optical</text>
+              <text x="185" y="158" font-family="Helvetica Neue, Inter, sans-serif" font-size="12" fill="#626474" text-anchor="end">separator</text>
+              <line x1="296" y1="135" x2="420" y2="135" stroke="#5148A2" stroke-width="2"></line>
+              <path d="M300 130 L292 135 L300 140 Z" fill="#5148A2"></path>
+              <text x="320" y="128" font-family="Helvetica Neue, Inter, sans-serif" font-size="12" fill="#5148A2">Illumination</text>
+              <path d="M230 96 L210 96" stroke="#C8708E" stroke-width="2"></path>
+              <path d="M226 91 L234 96 L226 101 Z" fill="#C8708E"></path>
+              <text x="200" y="92" font-family="Helvetica Neue, Inter, sans-serif" font-size="12" fill="#C8708E" text-anchor="end">Light from</text>
+              <text x="200" y="107" font-family="Helvetica Neue, Inter, sans-serif" font-size="12" fill="#C8708E" text-anchor="end">tissue</text>
+              <rect x="222" y="226" width="76" height="88" rx="6" fill="#FFFFFF" stroke="#5148A2" stroke-width="1.5"></rect>
+              <path d="M236 314 L284 314 L270 348 L250 348 Z" fill="#FFFFFF" stroke="#5148A2" stroke-width="1.5"></path>
+              <text x="316" y="275" font-family="Helvetica Neue, Inter, sans-serif" font-size="12" fill="#626474">Objective</text>
+              <path d="M150 392 L370 392 L370 440 L150 440 Z" fill="url(#cxTis)" stroke="#D5B2D2" stroke-width="1"></path>
+              <rect x="150" y="386" width="220" height="6" fill="#C8708E" opacity=".75"></rect>
+              <text x="384" y="392" font-family="Helvetica Neue, Inter, sans-serif" font-size="12" fill="#C8708E">Surface stain</text>
+              <text x="136" y="420" font-family="Helvetica Neue, Inter, sans-serif" font-size="12" fill="#626474" text-anchor="end">Tissue</text>
+              <ellipse cx="260" cy="418" rx="34" ry="14" fill="#FFF3D6" opacity=".9"></ellipse>
+              <text x="260" y="472" font-family="Helvetica Neue, Inter, sans-serif" font-size="12" fill="#202234" text-anchor="middle">Autofluorescent backlight</text>
+              <text x="260" y="490" font-family="Helvetica Neue, Inter, sans-serif" font-size="10.5" fill="#8D8A9E" text-anchor="middle">Light generated within the tissue</text>
+            </svg>
+            <div style="font:400 13px/1.65 'Helvetica Neue',Inter,sans-serif; color:#8D8A9E; margin-top:28px">A simplified optical schematic. The diagram illustrates the imaging principle, not the final instrument configuration.</div>
+            <a href="#technology" style="display:inline-block; margin-top:14px; font:400 13px 'Helvetica Neue',Inter,sans-serif; color:#5148A2; border-bottom:1px solid #5148A2; padding-bottom:2px">View full-size diagram ↗</a>
+          </div>
+          <div style="padding:30px 32px 32px; background:#FAF9FC; display:flex; flex-direction:column">
+            <div style="font:500 10px 'Helvetica Neue',Inter,sans-serif; letter-spacing:.26em; color:#5148A2; margin-bottom:28px">FROM TISSUE TO MICROSCOPIC DETAIL</div>
+            <div style="display:grid; grid-template-columns:297px 1fr; gap:10px; align-items:start">
+              <img src="./img/fibi-specimen.png" alt="Supplied tissue image with two green boxes marking regions of interest" style="display:block; width:100%; height:368px; object-fit:cover">
+              <div style="display:grid; grid-template-rows:183px 181px; gap:10px">
+                <img src="./img/fibi-detail-upper.png" alt="Higher-magnification tissue detail, upper region" style="display:block; width:100%; height:100%; object-fit:cover">
+                <img src="./img/fibi-detail-lower.png" alt="Higher-magnification tissue detail, lower region" style="display:block; width:100%; height:100%; object-fit:cover">
+              </div>
+            </div>
+            <div style="font:400 13px/1.65 'Helvetica Neue',Inter,sans-serif; color:#8D8A9E; margin:22px 0 auto">Images supplied by ClarusDx. Green boxes identify the regions shown at higher magnification.</div>
+            <div style="font:400 32px/1.25 'Helvetica Neue',Inter,sans-serif; letter-spacing:-.02em; margin-top:40px">Tissue architecture.<br><em style="font:400 italic 32px/1.25 'Newsreader',serif; color:#5148A2">Cellular detail.</em></div>
+          </div>
+        </div>
+      </div>
+      <div style="height:120px"></div>
+    </div>
+  </div>
+
+  <!-- PLATFORM -->
+  <div id="platform" style="background:#181829; color:#FFFFFF">
+    <div style="max-width:1280px; margin:0 auto; padding:110px 40px 80px">
+      <div style="display:grid; grid-template-columns:minmax(0,1fr) 335px; gap:48px; align-items:end; margin-bottom:60px">
+        <div>
+          <div style="font:500 11px 'Helvetica Neue',Inter,sans-serif; letter-spacing:.3em; color:#BBB2EB; margin-bottom:34px">THE FIBI PLATFORM</div>
+          <h2 style="font:400 56px/1.12 'Helvetica Neue',Inter,sans-serif; letter-spacing:-.025em; margin:0">Different specimens.<br>A common perspective.</h2>
+        </div>
+        <p style="font:400 16px/1.7 'Helvetica Neue',Inter,sans-serif; color:#C0BDCE; margin:0 0 6px">Two configurations built around distinct clinical needs. One core approach to direct tissue imaging.</p>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:30px">
+        <div style="border:1px solid #464253; padding:34px 34px 30px; display:flex; flex-direction:column">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:44px">
+            <span style="font:500 10px 'Helvetica Neue',Inter,sans-serif; letter-spacing:.26em; color:#BBB2EB">LARGE FORMAT IMAGING</span>
+            <span style="font:400 11px 'Helvetica Neue',Inter,sans-serif; color:#C0BDCE; border:1px solid #464253; padding:5px 12px; border-radius:999px">In development</span>
+          </div>
+          <div style="font:400 36px 'Helvetica Neue',Inter,sans-serif; letter-spacing:-.02em; margin-bottom:14px">GigaFIBI</div>
+          <p style="font:400 16px/1.7 'Helvetica Neue',Inter,sans-serif; color:#C0BDCE; margin:0 0 30px">Broad tissue-surface imaging, with an initial focus on breast lumpectomy margin assessment.</p>
+          <div style="height:265px; background:#000000; display:flex; align-items:center; justify-content:center; padding:10px 18px">
+            <img src="./img/gigafibi-card-crop.png" alt="GigaFIBI development instrument from ClarusDx materials" style="display:block; max-width:100%; max-height:100%; object-fit:contain; mix-blend-mode:screen">
+          </div>
+          <div style="display:flex; justify-content:space-between; padding-top:26px; font:400 12px 'Helvetica Neue',Inter,sans-serif; color:#8D8A9E">
+            <span>Surgical specimen assessment</span>
+            <a href="#applications" onClick="{{ goMargin }}" style="color:#FFFFFF; font-weight:500">Explore application ↗</a>
+          </div>
+        </div>
+        <div style="border:1px solid #464253; padding:34px 34px 30px; display:flex; flex-direction:column">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:44px">
+            <span style="font:500 10px 'Helvetica Neue',Inter,sans-serif; letter-spacing:.26em; color:#BBB2EB">CORE BIOPSY IMAGING</span>
+            <span style="font:400 11px 'Helvetica Neue',Inter,sans-serif; color:#C0BDCE; border:1px solid #464253; padding:5px 12px; border-radius:999px">In development</span>
+          </div>
+          <div style="font:400 36px 'Helvetica Neue',Inter,sans-serif; letter-spacing:-.02em; margin-bottom:14px">Needle FIBI</div>
+          <p style="font:400 16px/1.7 'Helvetica Neue',Inter,sans-serif; color:#C0BDCE; margin:0 0 30px">A compact configuration focused on earlier microscopic assessment of core biopsy material.</p>
+          <div style="height:265px; background:#000000; display:flex; align-items:center; padding:0 32px">
+            <div style="border-left:2px solid #5148A2; padding-left:26px">
+              <div style="font:400 32px/1.25 'Helvetica Neue',Inter,sans-serif; letter-spacing:-.02em; margin-bottom:22px">Small specimen.<br><em style="font:400 italic 32px/1.25 'Newsreader',serif; color:#D5B2D2">Meaningful information.</em></div>
+              <div style="font:400 14px/1.6 'Helvetica Neue',Inter,sans-serif; color:#8D8A9E">Supporting the question:<br>Does this tissue meet the need?</div>
+            </div>
+          </div>
+          <div style="display:flex; justify-content:space-between; padding-top:26px; font:400 12px 'Helvetica Neue',Inter,sans-serif; color:#8D8A9E">
+            <span>Core biopsy assessment</span>
+            <a href="#applications" onClick="{{ goBiopsy }}" style="color:#FFFFFF; font-weight:500">Explore application ↗</a>
+          </div>
+        </div>
+      </div>
+      <div style="font:400 12px 'Helvetica Neue',Inter,sans-serif; color:#8D8A9E; margin-top:30px">Instrument configurations and clinical applications are under development.</div>
+    </div>
+  </div>
+
+  <!-- APPLICATIONS -->
+  <div id="applications">
+    <div style="max-width:1280px; margin:0 auto; padding:120px 40px 120px">
+      <div style="display:grid; grid-template-columns:minmax(0,1fr) 375px; gap:48px; align-items:end; margin-bottom:64px">
+        <div>
+          <div style="font:500 11px 'Helvetica Neue',Inter,sans-serif; letter-spacing:.3em; color:#5148A2; margin-bottom:34px">CLINICAL APPLICATIONS</div>
+          <h2 style="font:400 56px/1.12 'Helvetica Neue',Inter,sans-serif; letter-spacing:-.025em; margin:0">Information with<br>an opportunity to act.</h2>
+        </div>
+        <p style="font:400 16px/1.7 'Helvetica Neue',Inter,sans-serif; color:#626474; margin:0 0 6px">Development begins with a clinical question. We're working toward imaging that fits the people, specimens, and decisions around it.</p>
+      </div>
+      <div style="display:grid; grid-template-columns:440px minmax(0,1fr); gap:70px; align-items:start">
+        <div style="display:flex; flex-direction:column; border-top:1px solid #DEDEE7">
+          <sc-for list="{{ tabs }}" as="t" hint-placeholder-count="3">
+            <button onClick="{{ t.onClick }}" style="all:unset; cursor:pointer; display:flex; align-items:center; gap:18px; padding:32px 4px; border-bottom:1px solid #DEDEE7; color:{{ t.fg }}">
+              <span style="font:400 11px 'Helvetica Neue',Inter,sans-serif; color:#8D8A9E">{{ t.idx }}</span>
+              <span style="flex:1; font:400 18px 'Helvetica Neue',Inter,sans-serif">{{ t.name }}</span>
+              <span style="font:400 14px 'Helvetica Neue',Inter,sans-serif; opacity:{{ t.arrow }}">↗</span>
+            </button>
+          </sc-for>
+        </div>
+        <div style="background:#F6F6FA; padding:44px 46px 40px">
+          <div style="font:500 10px 'Helvetica Neue',Inter,sans-serif; letter-spacing:.26em; color:#5148A2; margin-bottom:24px">{{ panel.eyebrow }}</div>
+          <h3 style="font:400 32px/1.25 'Helvetica Neue',Inter,sans-serif; letter-spacing:-.02em; margin:0 0 26px">{{ panel.q1 }}<br>{{ panel.q2 }}</h3>
+          <p style="font:400 16px/1.7 'Helvetica Neue',Inter,sans-serif; color:#626474; margin:0 0 18px">{{ panel.p1 }}</p>
+          <p style="font:400 16px/1.7 'Helvetica Neue',Inter,sans-serif; color:#626474; margin:0 0 30px">{{ panel.p2 }}</p>
+          <div style="border-left:2px solid #5148A2; padding:6px 0 6px 22px; margin-bottom:22px">
+            <div style="font:500 10px 'Helvetica Neue',Inter,sans-serif; letter-spacing:.26em; color:#C8708E; margin-bottom:12px">DEVELOPMENT GOAL</div>
+            <div style="font:400 17px/1.55 'Helvetica Neue',Inter,sans-serif; color:#202234">{{ panel.goal }}</div>
+          </div>
+          <div style="font:400 12px/1.6 'Helvetica Neue',Inter,sans-serif; color:#8D8A9E">{{ panel.fine }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCIENCE -->
+  <div id="science" style="background:#F3F2F8">
+    <div style="max-width:1280px; margin:0 auto; padding:120px 40px 110px">
+      <div style="display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:0; margin-bottom:64px">
+        <div style="padding-right:60px">
+          <div style="font:500 11px 'Helvetica Neue',Inter,sans-serif; letter-spacing:.3em; color:#5148A2; margin-bottom:34px">PUBLISHED SCIENCE</div>
+          <h2 style="font:400 56px/1.12 'Helvetica Neue',Inter,sans-serif; letter-spacing:-.025em; margin:0 0 34px">A closer look<br>at the evidence.</h2>
+          <p style="font:400 16px/1.7 'Helvetica Neue',Inter,sans-serif; color:#626474; margin:0 0 36px; max-width:420px">Peer-reviewed research provides a foundation for continued development of FIBI.</p>
+          <a href="https://doi.org/10.5858/arpa.2022-0432-OA" target="_blank" rel="noopener noreferrer" style="font:500 15px 'Helvetica Neue',Inter,sans-serif; color:#5148A2; border-bottom:1px solid #5148A2; padding-bottom:4px">Read the pilot study ↗</a>
+        </div>
+        <div style="border-left:1px solid #C0BDCE; padding-left:60px">
+          <div style="font:400 90px/1 'Helvetica Neue',Inter,sans-serif; letter-spacing:-.04em; color:#5148A2">97.0<span style="font-size:42px; letter-spacing:0">%</span></div>
+          <div style="font:400 17px/1.5 'Helvetica Neue',Inter,sans-serif; color:#202234; margin:22px 0 22px">Agreement with the reference diagnosis<br>across 400 FIBI reads</div>
+          <div style="font:400 13px/1.65 'Helvetica Neue',Inter,sans-serif; color:#8D8A9E; margin-bottom:20px; max-width:430px">Pilot study of 100 formalin-fixed surgical pathology specimens, assessed by four pathologists. Agreement used the study's major-discordance criterion.</div>
+          <a href="https://doi.org/10.5858/arpa.2022-0432-OA" target="_blank" rel="noopener noreferrer" style="font:400 14px 'Helvetica Neue',Inter,sans-serif; color:#5148A2; border-bottom:1px solid #5148A2; padding-bottom:2px">Borowsky et al., <cite>Arch Pathol Lab Med.</cite> 2024;148(3):345–352.</a>
+        </div>
+      </div>
+      <div style="background:#FFFFFF; border:1px solid #DEDEE7; padding:14px 14px 16px">
+        <div style="display:flex; justify-content:space-between; align-items:center; gap:20px; padding:0 0 14px; flex-wrap:wrap">
+          <div style="font:400 18px 'Helvetica Neue',Inter,sans-serif; padding-left:2px">Normal breast tissue</div>
+          <div style="display:flex; gap:4px">
+            <button onClick="{{ showFibi }}" style="all:unset; cursor:pointer; font:400 12.5px 'Helvetica Neue',Inter,sans-serif; padding:9px 16px; border-radius:2px; background:{{ fibiBg }}; color:{{ fibiFg }}; border:1px solid {{ fibiBorder }}">FIBI</button>
+            <button onClick="{{ showHe }}" style="all:unset; cursor:pointer; font:400 12.5px 'Helvetica Neue',Inter,sans-serif; padding:9px 16px; border-radius:2px; background:{{ heBg }}; color:{{ heFg }}; border:1px solid {{ heBorder }}">Conventional H&amp;E</button>
+          </div>
+        </div>
+        <img src="{{ studyImg }}" alt="{{ studyAlt }}" style="display:block; width:100%; height:auto">
+        <div style="font:400 12px/1.6 'Helvetica Neue',Inter,sans-serif; color:#8D8A9E; margin-top:14px; padding-left:2px">{{ studyCaption }}</div>
+      </div>
+      <p style="font:400 13px/1.65 'Helvetica Neue',Inter,sans-serif; color:#8D8A9E; margin:28px 0 0; max-width:1000px">These findings concern the study's imaging method and specimens. They do not establish the performance of final instrument configurations, fresh-tissue margin assessment, or AI diagnostic applications.</p>
+      <details style="margin-top:36px; border-top:1px solid #C0BDCE">
+        <summary style="display:flex; justify-content:space-between; align-items:center; padding:28px 0 0; font:400 14px 'Helvetica Neue',Inter,sans-serif; color:#202234">Study reference and image details <span style="font:300 26px/1 'Helvetica Neue',Inter,sans-serif; color:#202234">+</span></summary>
+        <div style="padding:24px 0 0; font:400 14px/1.7 'Helvetica Neue',Inter,sans-serif; color:#626474; max-width:960px; display:flex; flex-direction:column; gap:12px">
+          <div>Borowsky AD, Levenson RM, Gown AM, et al. <cite>A Pilot Validation Study Comparing Fluorescence-Imitating Brightfield Imaging, A Slide-Free Imaging Method, With Standard Formalin-Fixed, Paraffin-Embedded Hematoxylin-Eosin-Stained Tissue Section Histology for Primary Surgical Pathology Diagnosis.</cite> Archives of Pathology &amp; Laboratory Medicine. 2024;148(3):345–352.</div>
+          <div>Images: Figure 4, reproduced from the supplied ClarusDx materials. Original magnifications: ×4 (A, D), ×40 (B, E), and ×20 (C, F). Minor diagnostic differences without treatment or outcome implications were included in the reported agreement measure.</div>
+          <a href="https://doi.org/10.5858/arpa.2022-0432-OA" target="_blank" rel="noopener noreferrer">doi:10.5858/arpa.2022-0432-OA ↗</a>
+        </div>
+      </details>
+    </div>
+  </div>
+
+  <!-- TEAM -->
+  <div id="team">
+    <div style="max-width:1280px; margin:0 auto; padding:120px 40px 110px; display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:60px">
+      <div>
+        <div style="font:500 11px 'Helvetica Neue',Inter,sans-serif; letter-spacing:.3em; color:#5148A2; margin-bottom:34px">OUR TEAM</div>
+        <h2 style="font:400 56px/1.12 'Helvetica Neue',Inter,sans-serif; letter-spacing:-.025em; margin:0 0 34px">Built around<br>clinical understanding.</h2>
+        <p style="font:400 16px/1.7 'Helvetica Neue',Inter,sans-serif; color:#626474; margin:0; max-width:380px">Bringing pathology and imaging expertise together with experience in diagnostics development and commercialization.</p>
+      </div>
+      <div>
+        <div style="font:500 11px 'Helvetica Neue',Inter,sans-serif; letter-spacing:.3em; color:#5148A2; margin-bottom:34px">LEADERSHIP</div>
+        <div style="display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:40px 40px; padding-bottom:40px; border-bottom:1px solid #DEDEE7">
+          <div><div style="font:400 20px 'Helvetica Neue',Inter,sans-serif">Mitch Levine</div><div style="font:400 14px 'Helvetica Neue',Inter,sans-serif; color:#8D8A9E; margin-top:8px">Chief Executive Officer</div></div>
+          <div><div style="font:400 20px 'Helvetica Neue',Inter,sans-serif">Ryan Andrews</div><div style="font:400 14px 'Helvetica Neue',Inter,sans-serif; color:#8D8A9E; margin-top:8px">GM &amp; Chief Commercial Officer</div></div>
+          <div><div style="font:400 20px 'Helvetica Neue',Inter,sans-serif">Gary Gerttula, MBA</div><div style="font:400 14px 'Helvetica Neue',Inter,sans-serif; color:#8D8A9E; margin-top:8px">Co-Founder</div></div>
+          <div><div style="font:400 20px 'Helvetica Neue',Inter,sans-serif">Howard Sams, MBA</div><div style="font:400 14px 'Helvetica Neue',Inter,sans-serif; color:#8D8A9E; margin-top:8px">Chairman of the Board</div></div>
+        </div>
+        <div style="font:500 11px 'Helvetica Neue',Inter,sans-serif; letter-spacing:.3em; color:#5148A2; margin:40px 0 34px">SCIENTIFIC LEADERSHIP</div>
+        <div style="display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:40px">
+          <div><div style="font:400 20px 'Helvetica Neue',Inter,sans-serif">Farzad Fereidouni, PhD</div><div style="font:400 14px 'Helvetica Neue',Inter,sans-serif; color:#8D8A9E; margin-top:8px">Chief Technology Officer</div><div style="font:400 12px 'Helvetica Neue',Inter,sans-serif; color:#8D8A9E; margin-top:14px">Emory University</div></div>
+          <div><div style="font:400 20px 'Helvetica Neue',Inter,sans-serif">Sandy Borowsky, MD</div><div style="font:400 14px 'Helvetica Neue',Inter,sans-serif; color:#8D8A9E; margin-top:8px">Chief Medical Officer</div><div style="font:400 12px 'Helvetica Neue',Inter,sans-serif; color:#8D8A9E; margin-top:14px">UCSF</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONNECT -->
+  <div id="connect" style="background:#49428B; color:#FFFFFF">
+    <div style="max-width:1280px; margin:0 auto; padding:88px 40px 98px; display:grid; grid-template-columns:minmax(0,1fr) auto; gap:56px; align-items:center">
+      <div>
+        <div style="font:500 11px 'Helvetica Neue',Inter,sans-serif; letter-spacing:.3em; color:#E0DAEE; margin-bottom:34px">LET'S ADVANCE TISSUE IMAGING</div>
+        <h2 style="font:400 56px/1.12 'Helvetica Neue',Inter,sans-serif; letter-spacing:-.025em; margin:0 0 30px">Bring your clinical<br>perspective.</h2>
+        <p style="font:400 16px/1.7 'Helvetica Neue',Inter,sans-serif; color:#E0DAEE; margin:0; max-width:540px">We welcome conversations with pathologists, clinical investigators, and research collaborators.</p>
+      </div>
+      <div style="display:flex; flex-direction:column; align-items:center; gap:18px">
+        <a href="mailto:ryan@clarusdx.com?subject=Clinical%20collaboration%20inquiry" style="font:500 15px 'Helvetica Neue',Inter,sans-serif; background:#FFFFFF; color:#181829; padding:16px 30px; border-radius:2px">Connect with our team ↗</a>
+        <a href="mailto:ryan@clarusdx.com" style="font:400 14px 'Helvetica Neue',Inter,sans-serif; color:#E0DAEE">ryan@clarusdx.com</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div style="max-width:1280px; margin:0 auto; padding:62px 40px 48px">
+    <div style="display:flex; justify-content:space-between; align-items:center; gap:24px; flex-wrap:wrap; padding-bottom:36px; border-bottom:1px solid #DEDEE7">
+      <div style="display:flex; align-items:center; gap:28px; flex-wrap:wrap">
+        <a href="#top" style="display:flex; align-items:flex-start; gap:9px; color:#202234">
+          <svg height="30" viewBox="0 0 382 420" style="display:block; flex:none" aria-hidden="true">
+            <path d="M382 100 L382 95 A95 95 0 0 0 287 0 L95 0 A95 95 0 0 0 0 95 L0 325 A95 95 0 0 0 95 420 L287 420 A95 95 0 0 0 382 325 L382 322 L312 322 A22 22 0 0 1 290 345 L115 345 A35 35 0 0 1 80 310 L80 110 A35 35 0 0 1 115 75 L290 75 A22 22 0 0 1 312 100 Z" fill="#5148A2"></path>
+            <rect x="312" y="130" width="70" height="167" fill="#D15C68"></rect>
+          </svg>
+          <div style="display:flex; align-items:flex-start; gap:3px">
+            <div style="font:600 25px/30px 'Helvetica Neue',Inter,sans-serif; letter-spacing:-.03em">Clarus<span style="color:#5148A2">Dx</span></div>
+            <div style="font:400 10px/1 'Helvetica Neue',Inter,sans-serif; color:#626474; padding-top:2px">™</div>
+          </div>
+        </a>
+        <div style="font:400 14px 'Helvetica Neue',Inter,sans-serif; color:#626474">Pathology at the speed of light.<sup style="font-size:9px">™</sup></div>
+      </div>
+      <a href="#top" style="font:400 13px 'Helvetica Neue',Inter,sans-serif; color:#626474">Back to top ↑</a>
+    </div>
+    <div style="display:flex; justify-content:space-between; gap:24px; flex-wrap:wrap; padding-top:24px; font:400 12px/1.7 'Helvetica Neue',Inter,sans-serif; color:#8D8A9E">
+      <div style="max-width:720px">Products and applications described are in development. Clinical applications require appropriate validation and regulatory authorization.</div>
+      <div>© 2026 ClarusDx, Inc.</div>
+    </div>
+  </div>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { tab: 'margin', img: 'fibi' };
+  panels = {
+    margin: { eyebrow: 'BREAST LUMPECTOMY', q1: 'Could margin information', q2: 'be available during surgery?',
+      p1: 'Final margin assessment commonly relies on postoperative pathology. If further excision is needed, a patient may face another procedure.',
+      p2: 'GigaFIBI is being developed to support microscopic tissue-surface evaluation while there is still an opportunity to act in the same operation.',
+      goal: 'Support intraoperative assessment and evaluate the potential to reduce re-excisions.',
+      fine: 'A reduction in repeat surgery remains an outcome to demonstrate.' },
+    biopsy: { eyebrow: 'CORE BIOPSY ASSESSMENT', q1: 'Does the specimen answer', q2: 'the clinical question?',
+      p1: 'A biopsy needs to support both the initial assessment and any additional testing. Finding that tissue is insufficient after collection can delay the next step in care.',
+      p2: 'Needle FIBI is being developed to bring microscopic information closer to the time of collection.',
+      goal: 'Support earlier specimen assessment while retaining tissue for subsequent evaluation.',
+      fine: 'Adequacy performance and compatibility with downstream testing require validation.' },
+    research: { eyebrow: 'TISSUE BASED RESEARCH', q1: 'A digital view for', q2: 'the next research question.',
+      p1: 'Direct tissue imaging offers opportunities to document morphology, evaluate specimens, and develop computational pathology methods.',
+      p2: 'We welcome research collaborations in human and veterinary tissue assessment, pharmaceutical research, and AI-enabled image analysis.',
+      goal: 'Evaluate new applications through studies grounded in the needs of each specimen workflow.',
+      fine: 'Application-specific studies are needed to establish performance.' }
+  };
+  renderVals() {
+    const { tab, img } = this.state;
+    const defs = [['margin', '01', 'Surgical margins'], ['biopsy', '02', 'Core biopsies'], ['research', '03', 'Research applications']];
+    const fibi = img === 'fibi';
+    return {
+      tabs: defs.map(([id, idx, name]) => ({ idx, name,
+        fg: tab === id ? '#5148A2' : '#202234', arrow: tab === id ? 1 : 0,
+        onClick: () => this.setState({ tab: id }) })),
+      panel: this.panels[tab],
+      goMargin: () => this.setState({ tab: 'margin' }),
+      goBiopsy: () => this.setState({ tab: 'biopsy' }),
+      showFibi: () => this.setState({ img: 'fibi' }),
+      showHe: () => this.setState({ img: 'he' }),
+      fibiBg: fibi ? '#5148A2' : '#FFFFFF', fibiFg: fibi ? '#FFFFFF' : '#626474', fibiBorder: fibi ? '#5148A2' : '#DEDEE7',
+      heBg: fibi ? '#FFFFFF' : '#5148A2', heFg: fibi ? '#626474' : '#FFFFFF', heBorder: fibi ? '#DEDEE7' : '#5148A2',
+      studyImg: fibi ? './img/fibi-study.png' : './img/image3.jpg',
+      studyAlt: fibi ? 'Figure 4 panels A, B and C: FIBI images of normal breast tissue' : 'Conventional H&E images of the same tissue',
+      studyCaption: fibi ? 'FIBI · Panels A–C: tissue overview and higher-magnification details. Formalin-fixed specimens.' : 'Conventional H&E · Panels D–F: matched FFPE sections of the same tissue.'
+    };
+  }
+}
+</script>
+</body>
+</html>
