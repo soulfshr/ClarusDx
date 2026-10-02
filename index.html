@@ -69,7 +69,7 @@
           <div style="font:400 10px 'Helvetica Neue',Inter,sans-serif; letter-spacing:.3em; color:#8D8A9E; white-space:nowrap; writing-mode:vertical-rl; transform:rotate(180deg)">A CLOSER LOOK</div>
         </div>
         <div style="border:1px solid #8A809E; border-radius:80px 0 0 0; height:490px; display:flex; align-items:center; justify-content:center; overflow:hidden; position:relative">
-          <img src="./img/gigafibi-hero.png" alt="GigaFIBI tissue imaging instrument concept" style="display:block; width:100%; height:100%; object-fit:cover; mix-blend-mode:screen">
+          <img src="./img/gigafibi-hero.jpg" alt="GigaFIBI tissue imaging instrument concept" style="display:block; width:100%; height:100%; object-fit:cover; mix-blend-mode:screen">
           <div style="position:absolute; right:-7px; top:62px; width:13px; height:1px; background:#8A809E"></div>
           <div style="position:absolute; right:-1px; top:56px; width:1px; height:13px; background:#8A809E"></div>
         </div>
@@ -155,10 +155,10 @@
           <div style="padding:30px 32px 32px; background:#FAF9FC; display:flex; flex-direction:column">
             <div style="font:500 10px 'Helvetica Neue',Inter,sans-serif; letter-spacing:.26em; color:#5148A2; margin-bottom:28px">FROM TISSUE TO MICROSCOPIC DETAIL</div>
             <div style="display:grid; grid-template-columns:297px 1fr; gap:10px; align-items:start">
-              <img src="./img/fibi-specimen.png" alt="Supplied tissue image with two green boxes marking regions of interest" style="display:block; width:100%; height:368px; object-fit:cover">
+              <img loading="lazy" src="./img/fibi-specimen.jpg" alt="Supplied tissue image with two green boxes marking regions of interest" style="display:block; width:100%; height:368px; object-fit:cover">
               <div style="display:grid; grid-template-rows:183px 181px; gap:10px">
-                <img src="./img/fibi-detail-upper.png" alt="Higher-magnification tissue detail, upper region" style="display:block; width:100%; height:100%; object-fit:cover">
-                <img src="./img/fibi-detail-lower.png" alt="Higher-magnification tissue detail, lower region" style="display:block; width:100%; height:100%; object-fit:cover">
+                <img loading="lazy" src="./img/fibi-detail-upper.jpg" alt="Higher-magnification tissue detail, upper region" style="display:block; width:100%; height:100%; object-fit:cover">
+                <img loading="lazy" src="./img/fibi-detail-lower.jpg" alt="Higher-magnification tissue detail, lower region" style="display:block; width:100%; height:100%; object-fit:cover">
               </div>
             </div>
             <div style="font:400 13px/1.65 'Helvetica Neue',Inter,sans-serif; color:#8D8A9E; margin:22px 0 auto">Images supplied by ClarusDx. Green boxes identify the regions shown at higher magnification.</div>
@@ -189,7 +189,7 @@
           <div style="font:400 36px 'Helvetica Neue',Inter,sans-serif; letter-spacing:-.02em; margin-bottom:14px">GigaFIBI</div>
           <p style="font:400 16px/1.7 'Helvetica Neue',Inter,sans-serif; color:#C0BDCE; margin:0 0 30px">Broad tissue-surface imaging, with an initial focus on breast lumpectomy margin assessment.</p>
           <div style="height:265px; background:#000000; display:flex; align-items:center; justify-content:center; padding:10px 18px">
-            <img src="./img/gigafibi-card-crop.png" alt="GigaFIBI development instrument from ClarusDx materials" style="display:block; max-width:100%; max-height:100%; object-fit:contain; mix-blend-mode:screen">
+            <img loading="lazy" src="./img/gigafibi-card-crop.jpg" alt="GigaFIBI development instrument from ClarusDx materials" style="display:block; max-width:100%; max-height:100%; object-fit:contain; mix-blend-mode:screen">
           </div>
           <div style="display:flex; justify-content:space-between; padding-top:26px; font:400 12px 'Helvetica Neue',Inter,sans-serif; color:#8D8A9E">
             <span>Surgical specimen assessment</span>
@@ -279,7 +279,7 @@
             <button onClick="{{ showHe }}" style="all:unset; cursor:pointer; font:400 12.5px 'Helvetica Neue',Inter,sans-serif; padding:9px 16px; border-radius:2px; background:{{ heBg }}; color:{{ heFg }}; border:1px solid {{ heBorder }}">Conventional H&amp;E</button>
           </div>
         </div>
-        <img src="{{ studyImg }}" alt="{{ studyAlt }}" style="display:block; width:100%; height:auto">
+        <img loading="lazy" src="{{ studyImg }}" alt="{{ studyAlt }}" style="display:block; width:100%; height:auto">
         <div style="font:400 12px/1.6 'Helvetica Neue',Inter,sans-serif; color:#8D8A9E; margin-top:14px; padding-left:2px">{{ studyCaption }}</div>
       </div>
       <p style="font:400 13px/1.65 'Helvetica Neue',Inter,sans-serif; color:#8D8A9E; margin:28px 0 0; max-width:1000px">These findings concern the study's imaging method and specimens. They do not establish the performance of final instrument configurations, fresh-tissue margin assessment, or AI diagnostic applications.</p>
@@ -396,7 +396,7 @@ class Component extends DCLogic {
       showHe: () => this.setState({ img: 'he' }),
       fibiBg: fibi ? '#5148A2' : '#FFFFFF', fibiFg: fibi ? '#FFFFFF' : '#626474', fibiBorder: fibi ? '#5148A2' : '#DEDEE7',
       heBg: fibi ? '#FFFFFF' : '#5148A2', heFg: fibi ? '#626474' : '#FFFFFF', heBorder: fibi ? '#DEDEE7' : '#5148A2',
-      studyImg: fibi ? './img/fibi-study.png' : './img/image3.jpg',
+      studyImg: fibi ? './img/fibi-study.jpg' : './img/image3.jpg',
       studyAlt: fibi ? 'Figure 4 panels A, B and C: FIBI images of normal breast tissue' : 'Conventional H&E images of the same tissue',
       studyCaption: fibi ? 'FIBI · Panels A–C: tissue overview and higher-magnification details. Formalin-fixed specimens.' : 'Conventional H&E · Panels D–F: matched FFPE sections of the same tissue.'
     };
